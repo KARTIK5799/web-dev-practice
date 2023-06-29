@@ -27,7 +27,8 @@ footer {
   vertical-align: bottom;
   margin-top: 40px;
   text-align: center;
-
+  width: 100%;
+  height: 2.5rem;
 }
 
 .banner {
@@ -39,35 +40,50 @@ footer {
 
 .content {
   padding: 20px 0px;
-
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* ================================== */
 /* Layout page CSS */
 /* ================================== */
 
-
+.tile {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.tile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.tile img:hover {
+  filter: brightness(50%);
+  cursor: pointer;
+}
 
 .tile-text {
   position: absolute;
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-image {
-
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("/assets/hero.jpg");
-
 
   height: 50vh;
   background-position: center;
   background-size: cover;
 }
-.hero-image-title{
-  
-}
+
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
@@ -88,7 +104,36 @@ footer {
 /* Adventures grid page CSS */
 /* ================================== */
 
+.adventure-card {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+}
+.adventure-card img {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+}
+.adventure-card img:hover {
+  /* TODO: MODULE_ADVENTURES_GRID */
+  /* 1. Fill in the required properties. */
+}
 
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+
+.adventure-detail-card {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+
+.adventure-card-image {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
+.adventure-card-image:hover {
+  /* TODO: MODULE_ADVENTURE_DETAILS */
+  /* 1. Fill in the required properties. */
+}
 .experience-content ul li {
   margin-left: 16px;
   padding: 0;
